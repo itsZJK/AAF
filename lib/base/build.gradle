@@ -1,0 +1,19 @@
+import com.itsz.buildsrc.Android
+import com.itsz.buildsrc.AndroidX
+import com.itsz.buildsrc.DebugDep
+import com.itsz.buildsrc.JTest
+import com.itsz.buildsrc.Kt
+
+apply {
+    from "${project.rootDir.path}/buildLib.gradle"
+}
+
+dependencies {
+    api AndroidX.coreKtx
+    api AndroidX.appcompat
+    api Kt.stdlibJdk7
+    api Android.material
+    api JTest.junit
+    debugApi(DebugDep.leakCanary)
+
+}

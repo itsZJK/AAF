@@ -1,3 +1,10 @@
+# buildLib.gradle
+  抽取出来的公用的 .gradle 配置，可供其它 module 使用
+
+# checkDepVersions.gradle
+  用于检查依赖库的版本
+  在终端执行  ./gradlew dependencyUpdates 会在项目的 build 目录下生成build/dependencyUpdates/report.txt 文件
+
 # commit 风格
   使用中文表达,尽量控制在 20 个字以内
   (如果你发觉 20 个字描述不了，那很可能是因为这一次 commit 不够纯粹，可以考虑将之分成两部分内容或更多内容分次提交)
