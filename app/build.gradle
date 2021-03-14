@@ -36,6 +36,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding = true
+    }
 
     /*lintOptions {
 
@@ -53,8 +56,9 @@ android {
 
 
 dependencies {
-//    api project(":lib:common")
+//    api project(":lib:base")
     api project(path: ':data')
+    api project(path: ':lib:base')
     api AndroidX.coreKtx
     api AndroidX.appcompat
     api Kt.stdlibJdk7
