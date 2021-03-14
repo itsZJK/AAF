@@ -1,8 +1,49 @@
-import com.itsz.buildsrc.Android
+/*import com.itsz.buildsrc.Android
 import com.itsz.buildsrc.AndroidX
+import com.itsz.buildsrc.AppBuildConfig
 import com.itsz.buildsrc.DebugDep
 import com.itsz.buildsrc.JTest
 import com.itsz.buildsrc.Kt
+
+
+apply {
+    plugin "com.android.library"
+    plugin "kotlin-android"
+}
+
+android {
+    compileSdkVersion AppBuildConfig.compileSdkVersion
+    buildToolsVersion AppBuildConfig.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion AppBuildConfig.minSdkVersion
+        targetSdkVersion AppBuildConfig.targetSdkVersion
+        versionCode AppBuildConfig.versionCode
+        versionName AppBuildConfig.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}*/
+
+//apply {
+//    from "${project.rootDir.path}/buildLib.gradle"
+//}
+
+import com.itsz.buildsrc.*
 
 apply {
     from "${project.rootDir.path}/buildLib.gradle"
@@ -11,9 +52,9 @@ apply {
 dependencies {
     api AndroidX.coreKtx
     api AndroidX.appcompat
-    api Kt.stdlibJdk7
     api Android.material
     api JTest.junit
     debugApi(DebugDep.leakCanary)
+    api project(path: ':lib:common')
 
 }
