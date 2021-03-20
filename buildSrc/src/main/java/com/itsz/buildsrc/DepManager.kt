@@ -5,11 +5,11 @@ object Versions {
   val coreKtx = "1.3.2"
   val appcompat = "1.2.0"
   val constraintlayout = "2.0.4"
-  val fragment = "1.2.5"
+  val fragment = "1.3.1"
   val junit = "4.13.1"
   val junitExt = "1.1.2"
   val espressoCore = "3.3.0"
-  val lifecycle_version = "2.2.0"
+  val lifecycle_version = "2.3.0"
   val retrofit = "2.9.0"
   val okhttpLogging = "4.9.0"
   val paging = "3.0.0-alpha02"
@@ -24,7 +24,7 @@ object Versions {
   val hit = "2.28-alpha"
   val hitViewModule = "1.0.0-alpha01"
   val appStartup = "1.0.0-alpha01"
-  val material = "1.2.0"
+  val material = "1.3.0"
   val stetho = "1.5.1"
   val coroutines = "1.3.9"
   val navigation = "2.3.1"
@@ -124,7 +124,7 @@ object DebugDep {
 
 object Depend {
   val timber = "com.jakewharton.timber:timber:${Versions.timber}"
-  val utilCode = "com.blankj:utilcode:1.30.4"
+  val utilCode = "com.blankj:utilcode:1.30.6"
   val autodispose2 = "com.uber.autodispose2:autodispose-android:${Versions.autodispose2}"
   val autodispose2Lifecycle = "com.uber.autodispose2:autodispose-androidx-lifecycle:${Versions.autodispose2}"
 }

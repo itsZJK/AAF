@@ -53,6 +53,11 @@ dependencies {
     api AndroidX.coreKtx
     api AndroidX.appcompat
     api Android.material
+    api Fragment.runtimeKtx
+    api AndroidX.lifecycleViewModel
+    api AndroidX.lifecycleLiveData
+    api AndroidX.lifecycleCommon
+    api AndroidX.lifecycleProcess
     api JTest.junit
     debugApi(DebugDep.leakCanary)
     api project(path: ':lib:common')

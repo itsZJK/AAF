@@ -59,15 +59,15 @@ dependencies {
 //    api project(":lib:base")
     api project(path: ':data')
     api project(path: ':lib:base')
-    api AndroidX.coreKtx
-    api AndroidX.appcompat
-    api Kt.stdlibJdk7
-    api Android.material
-    implementation Fragment.runtimeKtx
-    implementation AndroidX.lifecycleViewModel
-    implementation AndroidX.lifecycleLiveData
-    implementation AndroidX.lifecycleCommon
-    implementation AndroidX.lifecycleProcess
+//    api AndroidX.coreKtx
+//    api AndroidX.appcompat
+//    api Kt.stdlibJdk7
+//    api Android.material
+//    implementation Fragment.runtimeKtx
+//    implementation AndroidX.lifecycleViewModel
+//    implementation AndroidX.lifecycleLiveData
+//    implementation AndroidX.lifecycleCommon
+//    implementation AndroidX.lifecycleProcess
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 //    api project(path: ':lib:lint')
 //    lintChecks project(':lint')
